@@ -1,3 +1,6 @@
+Problem: Count Nodes in Linked List
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
