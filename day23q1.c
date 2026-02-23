@@ -1,3 +1,5 @@
+Problem: Merge Two Sorted Linked Lists - Implement using linked list with dynamic memory allocation.
+
 #include <stdio.h>
 #include <stdlib.h>
 
