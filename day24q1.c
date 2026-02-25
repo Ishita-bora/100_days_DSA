@@ -33,55 +33,39 @@ struct Node* insertEnd(struct Node* head, int value)
     return head;
 }
 
-struct Node* mergeLists(struct Node* l1, struct Node* l2) 
+struct Node* deleteFirstOccurrence(struct Node* head, int key) 
 {
-    struct Node* merged = NULL;
-    struct Node* tail = NULL;
+    struct Node* temp = head;
+    struct Node* prev = NULL;
 
-    while (l1 != NULL && l2 != NULL) 
-    {
-        struct Node* newNode;
-
-        if (l1->data < l2->data) 
-        {
-            newNode = createNode(l1->data);
-            l1 = l1->next;
-        } else 
-        {
-            newNode = createNode(l2->data);
-            l2 = l2->next;
-        }
-
-        if (merged == NULL) 
-        {
-            merged = newNode;
-            tail = newNode;
-        } else {
-            tail->next = newNode;
-            tail = newNode;
-        }
-    }
-
-    while (l1 != NULL)
+    if (temp != NULL && temp->data == key)
      {
-        tail->next = createNode(l1->data);
-        tail = tail->next;
-        l1 = l1->next;
+        head = temp->next;
+        free(temp);
+        return head;
     }
 
-    while (l2 != NULL) 
+    
+    while (temp != NULL && temp->data != key) 
     {
-        tail->next = createNode(l2->data);
-        tail = tail->next;
-        l2 = l2->next;
+        prev = temp;
+        temp = temp->next;
     }
 
-    return merged;
+    
+    if (temp != NULL)
+     {
+        prev->next = temp->next;
+        free(temp);
+    }
+
+    return head;
 }
 
 void printList(struct Node* head) 
 {
-    while (head != NULL) {
+    while (head != NULL) 
+    {
         printf("%d ", head->data);
         head = head->next;
     }
@@ -89,27 +73,21 @@ void printList(struct Node* head)
 
 int main() 
 {
-    int n, m, x;
-    struct Node* list1 = NULL;
-    struct Node* list2 = NULL;
+    int n, x, key;
+    struct Node* head = NULL;
 
     scanf("%d", &n);
-    for (int i = 0; i < n; i++) 
-    {
+    for (int i = 0; i < n; i++)
+     {
         scanf("%d", &x);
-        list1 = insertEnd(list1, x);
+        head = insertEnd(head, x);
     }
 
-    scanf("%d", &m);
-    for (int i = 0; i < m; i++)
-    {
-        scanf("%d", &x);
-        list2 = insertEnd(list2, x);
-    }
+    scanf("%d", &key);
 
-    struct Node* mergedList = mergeLists(list1, list2);
+    head = deleteFirstOccurrence(head, key);
 
-    printList(mergedList);
+    printList(head);
 
     return 0;
-}
+}c
