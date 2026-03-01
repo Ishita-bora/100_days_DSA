@@ -1,3 +1,6 @@
+Problem: Rotate Linked List Right by k Places - Implement using linked list with dynamic memory allocation.
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
