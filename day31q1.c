@@ -1,3 +1,6 @@
+Problem: Implement a stack data structure using an array with the following operations: push, pop, and display.
+
+
 #include <stdio.h>
 
 int stack[100], top = -1;
