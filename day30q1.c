@@ -1,3 +1,6 @@
+Problem: Polynomial Using Linked List - Implement using linked list with dynamic memory allocation.
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
