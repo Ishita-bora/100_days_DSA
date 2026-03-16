@@ -1,3 +1,6 @@
+Perform inorder, preorder, and postorder traversals of a given binary tree.
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
