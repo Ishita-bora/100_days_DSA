@@ -1,3 +1,6 @@
+Find the height (maximum depth) of a given binary tree.
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
