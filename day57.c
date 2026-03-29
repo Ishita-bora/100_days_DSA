@@ -1,3 +1,7 @@
+Convert a binary tree into its mirror image by swapping left and right children at every node.
+
+    
+
 #include <stdio.h>
 #include <stdlib.h>
 
