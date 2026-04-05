@@ -1,3 +1,6 @@
+Problem: Perform BFS from a given source using queue.
+
+
 #include <stdio.h>
 
 int queue[100], front = -1, rear = -1;
