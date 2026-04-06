@@ -1,3 +1,6 @@
+Problem: Using DFS and parent tracking, detect if undirected graph has a cycle.
+
+
 #include <stdio.h>
 
 int visited[100];
