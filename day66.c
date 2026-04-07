@@ -1,3 +1,6 @@
+Problem: Detect cycle in directed graph using DFS and recursion stack.
+
+
 #include <stdio.h>
 
 int n;
