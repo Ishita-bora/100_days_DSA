@@ -1,3 +1,5 @@
+Problem: Print topological ordering of a Directed Acyclic Graph (DAG) using DFS.
+
 #include <stdio.h>
 
 #define MAX 100
