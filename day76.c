@@ -1,3 +1,7 @@
+Problem Statement
+Using DFS or BFS, count number of connected components.
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
