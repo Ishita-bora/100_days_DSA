@@ -1,3 +1,7 @@
+Problem Statement
+Given weighted undirected graph, compute total weight of Minimum Spanning Tree using Prim’s algorithm.
+
+
 #include <stdio.h>
 #include <limits.h>
 
