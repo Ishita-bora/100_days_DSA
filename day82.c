@@ -1,3 +1,6 @@
+Problem: Given a sorted array of integers and a target value x, implement the Lower Bound and Upper Bound operations using Binary Search.
+
+
 #include <stdio.h>
 
 int lowerBound(int arr[], int n, int x) {
